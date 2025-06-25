@@ -8,6 +8,6 @@ If you want VRR support, set `vrr=drm-vrr-enabled=auto`.
 
 Set `hwdec=auto-safe` unless you have excellent specs (using hw decoding is most efficient, but can cause graghical errors, so powerful rigs may prefer to skip it). 
 
-Set `autofit-larger=75%x75%` (sets the window resolution for high resolution videos to a manageable size).
+Set `autofit-larger=75%x75%` (sets the window size for high resolution videos to a manageable size).
 
 Set `fs=yes` for default to fullscreen.
