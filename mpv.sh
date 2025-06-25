@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 echo 'submit y or n to select your yes/no answer'
 echo 'default option is capitalized'
+
 read -rp 'flatpak version of mpv? [y/N]: ' flatpak
 if [[ "$flatpak" == [Yy]* ]]
 then
