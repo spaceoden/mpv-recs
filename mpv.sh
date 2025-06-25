@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-#mkdir - ~/.config/mpv/
 echo 'press the y or n key to select your yes/no answer'
 read -rp 'flatpak version of mpv? [y/N]: ' flatpak
 if [[ "$flatpak" == [Yy]* ]]
