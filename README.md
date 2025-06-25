@@ -2,6 +2,8 @@
 
 My recommendations for configuring [mpv media player](https://mpv.io/), set via an interactive bash script.
 
+My script and recommendations are for linux desktops running wayland (i.e. recent versions of GNOME or KDE). HDR and VRR support depend upon your hardware and desktop environment support.
+
 ## recommendations
 
 If you have low specs (i.e. a single-board computer or old laptop), set `profile=fast`. If you have high specs, set `profile=high-quality`. If you have mid specs, set neither.[^profile][^profile2]
