@@ -2,7 +2,7 @@ My recommendations for configuring mpv media player, set via an interactive scri
 
 If you have good specs, set `profile=high-quality`
 
-If you want HDR output, set `vo=dmabuf-wayland`. Otherwise, set `vo=gpu-next`.
+If you want HDR output, set `vo=dmabuf-wayland`. Otherwise, set `vo=gpu-next` (in dev update of default driver: higher quality and faster; may contain bugs, but I haven't noticed any).
 
 If you want VRR support, set `vrr=drm-vrr-enabled=auto`.
 
