@@ -2,7 +2,7 @@
 
 My recommendations for configuring [mpv media player](https://mpv.io/), set via an interactive bash script.
 
-My script and recommendations are for linux desktops running wayland (i.e. recent versions of GNOME or KDE). HDR and VRR support depend upon your hardware and desktop environment support.
+My script and recommendations are crafted for linux desktops running wayland (i.e. recent versions of GNOME or KDE). HDR and VRR support depend upon your hardware and desktop environment support.
 
 ## recommendations
 
