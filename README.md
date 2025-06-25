@@ -16,7 +16,9 @@ If you want VRR support, set `drm-vrr-enabled=auto`.[^vrr]
 
 Set `hwdec=auto-safe` in most cases. Using hardware decoding should be most efficient, but can cause errors.[^hwdec]
 
-Set `autofit-larger=75%x75%`. This sets the window size for high resolution videos to a manageable size. Set `autofit-smaller=20%x20%`. This prevents the window size from being too small.[^autofit]
+Set `autofit-larger=75%x75%`. This sets the window size for high resolution videos to a manageable size.[^autofit]
+
+Set `autofit-smaller=20%x20%`. This prevents the window size from being too small.[^autofit]
 
 Set `fs=yes` for default to fullscreen.[^fs]
 
