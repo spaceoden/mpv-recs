@@ -4,7 +4,7 @@ If you have good specs, set `profile=high-quality`.
 
 If you want HDR output, set `vo=dmabuf-wayland`. Otherwise, set `vo=gpu-next` (in dev update of default driver: higher quality and faster; may contain bugs, but I haven't noticed any).
 
-If you want VRR support, set `vrr=drm-vrr-enabled=auto`.
+If you want VRR support, set `drm-vrr-enabled=auto`.
 
 Set `hwdec=auto-safe` unless you have excellent specs (using hw decoding is most efficient, but can cause graghical errors, so powerful rigs may prefer to skip it). 
 
