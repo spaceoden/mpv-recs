@@ -10,7 +10,7 @@ If you have low specs (i.e. a single-board computer or old laptop), set `profile
 
 If you want HDR output, and have mesa >=25.1, set `gpu-next`, `target-colorspace-hint`, `gpu-api=vulkan`, and `gpu-context=waylandvk`. Otherwise, just set `vo=dmabuf-wayland`.[^hdrchoice]
 
-If you don't need HDR output, still set `vo=gpu-next`. gpu-next is the in-dev update of the default driver: it's higher quality and faster; it may contain bugs, but I haven't noticed any.[^vo][^gpunext]
+If you don't want HDR output, still set `vo=gpu-next`. gpu-next is the in-dev update of the default driver: it's higher quality and faster; it may contain bugs, but I haven't noticed any.[^vo][^gpunext]
 
 If you want VRR support, set `drm-vrr-enabled=auto`.[^vrr]
 
