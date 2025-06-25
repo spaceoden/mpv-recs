@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-echo 'press the y or n key to select your yes/no answer'
+echo 'type y or n to select your yes/no answer'
 read -rp 'flatpak version of mpv? [y/N]: ' flatpak
 if [[ "$flatpak" == [Yy]* ]]
 then
