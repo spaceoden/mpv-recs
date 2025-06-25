@@ -1,6 +1,10 @@
-My recommendations for configuring mpv media player, set via an interactive script.
+# my mpv recommendations
 
-If you have low specs, set `profile=fast`. If you have high specs, set `profile=high-quality`. If you have mid specs, set neither.[^profile]
+My recommendations for configuring [mpv media player](https://mpv.io/), set via an interactive bash script.
+
+## recommendations
+
+If you have low specs (i.e. a single-board computer or old laptop), set `profile=fast`. If you have high specs, set `profile=high-quality`. If you have mid specs, set neither.[^profile][^profile2]
 
 If you want HDR output, set `vo=dmabuf-wayland`. Otherwise, set `vo=gpu-next`. gpu-next is the in dev update of the default driver: it's higher quality and faster; it may contain bugs, but I haven't noticed any.[^vo][^gpunext]
 
@@ -13,6 +17,7 @@ Set `autofit-larger=75%x75%`. This sets the window size for high resolution vide
 Set `fs=yes` for default to fullscreen.[^fs]
 
 [^profile]: https://github.com/mpv-player/mpv/blob/master/etc/builtin.conf
+[^profile2]: https://github.com/mpv-player/mpv/issues/13257#issuecomment-1885576168
 [^vo]: https://mpv.io/manual/stable/#video-output-drivers
 [^gpunext]: https://github.com/mpv-player/mpv/wiki/GPU-Next-vs-GPU
 [^vrr]: https://mpv.io/manual/stable/#video-output-drivers-drm-vrr-enabled
