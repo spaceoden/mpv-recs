@@ -14,7 +14,7 @@ If you don't need HDR output, still set `vo=gpu-next`. gpu-next is the in-dev up
 
 If you want VRR support, set `drm-vrr-enabled=auto`.[^vrr]
 
-Set `hwdec=auto-safe` in most cases. Using hw decoding should be most efficient, but can cause errors.[^hwdec]
+Set `hwdec=auto-safe` in most cases. Using hardware decoding should be most efficient, but can cause errors.[^hwdec]
 
 Set `autofit-larger=75%x75%`. This sets the window size for high resolution videos to a manageable size.[^autofit]
 
