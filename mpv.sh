@@ -38,7 +38,16 @@ fi
 read -rp 'enable hdr? [y/N]: ' hdr
 if [[ "$hdr" == [Yy]* ]]
 then
-  vo='dmabuf-wayland'
+  read -rp 'is your mesa version >=25.1? [y/N]: ' mesa
+  if [[ "$mesa" == [Yy]* ]]
+  then
+    vo='gpu-next
+target-colorspace-hint
+gpu-api=vulkan
+gpu-context=waylandvk'
+  else
+    vo='dmabuf-wayland'
+  fi
 else
   vo='gpu-next'
 fi
