@@ -16,13 +16,15 @@ else
 fi
 
 read -rp 'low spec device? [y/N]: ' lowspec
-read -rp 'high spec device? [y/N]: ' hispec
 if [[ "$lowspec" == [Yy]* ]]
 then
   profile='profile=fast'
-elif [[ "$hispec" == [Yy]* ]]
-then
-  profile='profile=high-quality'
+else
+  read -rp 'high spec device? [y/N]: ' hispec
+  if [[ "$hispec" == [Yy]* ]]
+  then
+    profile='profile=high-quality'
+  fi
 fi
 
 read -rp 'use hw decoding? (most efficient, may rarely cause issues) [Y/n]: ' hwdec
