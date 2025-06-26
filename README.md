@@ -6,7 +6,7 @@ My script and recommendations are crafted for linux desktops running wayland (i.
 
 ## recommendations
 
-If you have low specs (i.e. a single-board computer or old laptop), set `profile=fast`. If you have high specs, set `profile=high-quality`. If you have mid specs, set neither.[^profile][^profile2]
+If you have low specs, set `profile=fast`. If you have high specs, set `profile=high-quality`. If you have mid specs, set neither.[^profile][^profile2]
 
 If you want HDR output, and have mesa >= 25.1, set `vo=gpu-next`, `target-colorspace-hint`, `gpu-api=vulkan`, and `gpu-context=waylandvk`. If your mesa < 25.1, just set `vo=dmabuf-wayland`.[^hdrchoice]
 
