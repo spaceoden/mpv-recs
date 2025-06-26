@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+
+set -euo pipefail
+
 echo 'submit y or n to select your yes/no answer'
 echo 'default option is capitalized'
 
