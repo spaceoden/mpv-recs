@@ -8,7 +8,7 @@ My script and recommendations are crafted for linux desktops running wayland (i.
 
 If you have low specs (i.e. a single-board computer or old laptop), set `profile=fast`. If you have high specs, set `profile=high-quality`. If you have mid specs, set neither.[^profile][^profile2]
 
-If you want HDR output, and have mesa >=25.1, set `vo=gpu-next`, `target-colorspace-hint`, `gpu-api=vulkan`, and `gpu-context=waylandvk`. Otherwise, just set `vo=dmabuf-wayland`.[^hdrchoice]
+If you want HDR output, and have mesa >= 25.1, set `vo=gpu-next`, `target-colorspace-hint`, `gpu-api=vulkan`, and `gpu-context=waylandvk`. If your mesa < 25.1, just set `vo=dmabuf-wayland`.[^hdrchoice]
 
 If you don't want HDR output, still set `vo=gpu-next`. gpu-next is the in-dev update of the default driver: it's higher quality and faster; it may contain bugs, but I haven't noticed any.[^vo][^gpunext]
 
