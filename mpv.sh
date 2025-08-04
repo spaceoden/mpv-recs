@@ -62,5 +62,5 @@ vo=$vo
 ${vrr:+$vrr}
 ${hwdec:+$hwdec}
 autofit-larger=75%x75%
-autofit-smaller=20%x20%
+autofit-smaller=33%x33%
 fs=yes" > "$dest"
