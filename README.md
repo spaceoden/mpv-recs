@@ -18,7 +18,7 @@ Set `hwdec=auto-safe` in most cases. Using hardware decoding should be most effi
 
 Set `autofit-larger=75%x75%`. This sets the window size for high resolution videos to a manageable size.[^autofit]
 
-Set `autofit-smaller=20%x20%`. This sets the window size for low resolution videos to a manageable size.[^autofit]
+Set `autofit-smaller=33%x33%`. This sets the window size for low resolution videos to a manageable size.[^autofit]
 
 Set `fs=yes` for default to fullscreen.[^fs]
 
