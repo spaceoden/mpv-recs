@@ -27,15 +27,15 @@ else
   fi
 fi
 
-read -rp 'use hw decoding? (most efficient, may rarely cause issues) [Y/n]: ' hwdec
-hwdec=${hwdec:-y}
-if [[ "$hwdec" == [Yy]* ]]
+read -rp 'use hw decoding? (most efficient, may rarely cause issues) [Y/n]: ' hwdecq
+hwdecq=${hwdecq:-y}
+if [[ "$hwdecq" == [Yy]* ]]
 then
   hwdec='hwdec=auto-safe'
 fi
 
-read -rp 'enable vrr? [y/N]: ' vrr
-if [[ "$vrr" == [Yy]* ]]
+read -rp 'enable vrr? [y/N]: ' vrrq
+if [[ "$vrrq" == [Yy]* ]]
 then
   vrr='drm-vrr-enabled=auto'
 fi
