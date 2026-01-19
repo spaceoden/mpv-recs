@@ -1,34 +1,29 @@
 # my mpv recommendations
 
-My recommendations for configuring [mpv media player](https://mpv.io/), set via an interactive bash script.
-
-My script and recommendations are crafted for linux desktops running wayland (i.e. recent versions of GNOME or KDE). HDR and VRR support depend upon your hardware and desktop environment support.
-
-## recommendations
+My recommendations for configuring [mpv media player](https://mpv.io/).
 
 By and large I recommend non-default settings that "just work", providing an optimal experience without the need for manually enablement and fine-tuning.
 
+## recommendations
+
 If you have low specs, set `profile=fast`. If you have high specs, set `profile=high-quality`. If you have mid specs, set neither.[^profile][^profile2]
 
-If you want HDR output, and have mesa >= 25.1, set `vo=gpu-next` and `target-colorspace-hint=auto`. If your mesa < 25.1, just set `vo=dmabuf-wayland`.[^hdrchoice]
-
-If you don't want HDR output, still set `vo=gpu-next`. gpu-next is the in-dev update of the default driver: it's higher quality and faster; it may contain bugs, but I haven't noticed any.[^vo][^gpunext]
+`vo=gpu-next` is the in-dev update of the default driver: it's higher quality, faster, and has new features (such as HDR support enabled); it may contain bugs, but I haven't noticed any.[^vo][^gpunext]
 
 `deinterlace=auto` enables deinterlacing when interlaced video is detected.[^deinterlace]
 
 `drm-vrr-enabled=auto` enables VRR support when your system reports availablity.[^vrr]
 
-`hwdec=auto-safe` is generally good. Hardware decoding should be most efficient, but can cause errors.[^hwdec]
+`hwdec=auto` enables well supported hardware decoding drivers. Hardware decoding should be most efficient, but can cause errors.[^hwdec]
 
-Set `autofit-larger=75%x75%`. This sets the window size for high resolution videos to a manageable size.[^autofit]
+`autofit-larger=75%x75%` sets the window size for high resolution videos to a manageable size.[^autofit]
 
-Set `autofit-smaller=33%x33%`. This sets the window size for low resolution videos to a manageable size.[^autofit]
+`autofit-smaller=33%x33%` sets the window size for low resolution videos to a manageable size.[^autofit]
 
-Set `fs=yes` for default to fullscreen.[^fs]
+`fs=yes` opens files in fullscreen by default.[^fs]
 
 [^profile]: https://github.com/mpv-player/mpv/blob/master/etc/builtin.conf
 [^profile2]: https://github.com/mpv-player/mpv/issues/13257#issuecomment-1885576168
-[^hdrchoice]: https://github.com/mpv-player/mpv/discussions/16105#discussioncomment-12619072
 [^vo]: https://mpv.io/manual/stable/#video-output-drivers
 [^gpunext]: https://github.com/mpv-player/mpv/wiki/GPU-Next-vs-GPU
 [^deinterlace]: https://mpv.io/manual/stable/#options-deinterlace
