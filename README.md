@@ -6,15 +6,19 @@ My script and recommendations are crafted for linux desktops running wayland (i.
 
 ## recommendations
 
+By and large I recommend non-default settings that "just work", providing an optimal experience without the need for manually enablement and fine-tuning.
+
 If you have low specs, set `profile=fast`. If you have high specs, set `profile=high-quality`. If you have mid specs, set neither.[^profile][^profile2]
 
-If you want HDR output, and have mesa >= 25.1, set `vo=gpu-next`, `target-colorspace-hint`, `gpu-api=vulkan`, and `gpu-context=waylandvk`. If your mesa < 25.1, just set `vo=dmabuf-wayland`.[^hdrchoice]
+If you want HDR output, and have mesa >= 25.1, set `vo=gpu-next` and `target-colorspace-hint=auto`. If your mesa < 25.1, just set `vo=dmabuf-wayland`.[^hdrchoice]
 
 If you don't want HDR output, still set `vo=gpu-next`. gpu-next is the in-dev update of the default driver: it's higher quality and faster; it may contain bugs, but I haven't noticed any.[^vo][^gpunext]
 
-If you want VRR support, set `drm-vrr-enabled=auto`.[^vrr]
+`deinterlace=auto` enables deinterlacing when interlaced video is detected.[^deinterlace]
 
-Set `hwdec=auto-safe` in most cases. Using hardware decoding should be most efficient, but can cause errors.[^hwdec]
+`drm-vrr-enabled=auto` enables VRR support when your system reports availablity.[^vrr]
+
+`hwdec=auto-safe` is generally good. Hardware decoding should be most efficient, but can cause errors.[^hwdec]
 
 Set `autofit-larger=75%x75%`. This sets the window size for high resolution videos to a manageable size.[^autofit]
 
@@ -27,6 +31,7 @@ Set `fs=yes` for default to fullscreen.[^fs]
 [^hdrchoice]: https://github.com/mpv-player/mpv/discussions/16105#discussioncomment-12619072
 [^vo]: https://mpv.io/manual/stable/#video-output-drivers
 [^gpunext]: https://github.com/mpv-player/mpv/wiki/GPU-Next-vs-GPU
+[^deinterlace]: https://mpv.io/manual/stable/#options-deinterlace
 [^vrr]: https://mpv.io/manual/stable/#video-output-drivers-drm-vrr-enabled
 [^hwdec]: https://mpv.io/manual/stable/#options-hwdec
 [^autofit]: https://mpv.io/manual/stable/#options-autofit
